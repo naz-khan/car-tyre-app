@@ -1,0 +1,6 @@
+@CarTyres.Server_HostAddress = http://localhost:5136
+
+GET {{CarTyres.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
