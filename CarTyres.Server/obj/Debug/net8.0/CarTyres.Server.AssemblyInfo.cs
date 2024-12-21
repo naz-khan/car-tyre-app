@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarTyres.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+636fab0441eed66dd14fabb5b2fb319e82f3f882")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9388a897246cbaa7efdb2642ca12d79b8b1e513e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarTyres.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarTyres.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

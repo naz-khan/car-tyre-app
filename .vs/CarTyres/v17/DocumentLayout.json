@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\route\\router.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\route\\router.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}|CarTyres.Server\\CarTyres.Server.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}|CarTyres.Server\\CarTyres.Server.csproj|solutionrelative:cartyres.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\route\\protectedroute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\route\\protectedroute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\components\\navlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\components\\navlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}|CarTyres.Server\\CarTyres.Server.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}|CarTyres.Server\\CarTyres.Server.csproj|solutionrelative:cartyres.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\views\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\views\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\service\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|solutionrelative:service\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}|CarTyres.Server\\CarTyres.Server.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}|CarTyres.Server\\CarTyres.Server.csproj|solutionrelative:cartyres.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,59 +49,94 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProtectedRoute.jsx",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\route\\ProtectedRoute.jsx",
+              "RelativeDocumentMoniker": "cartyres.client\\src\\route\\ProtectedRoute.jsx",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\route\\ProtectedRoute.jsx",
+              "RelativeToolTip": "cartyres.client\\src\\route\\ProtectedRoute.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-12-21T15:31:53.967Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "NavLayout.jsx",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\components\\NavLayout.jsx",
+              "RelativeDocumentMoniker": "cartyres.client\\src\\components\\NavLayout.jsx",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\components\\NavLayout.jsx",
+              "RelativeToolTip": "cartyres.client\\src\\components\\NavLayout.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-12-21T14:48:10.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.jsx",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\main.jsx",
+              "RelativeDocumentMoniker": "cartyres.client\\src\\main.jsx",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\main.jsx",
+              "RelativeToolTip": "cartyres.client\\src\\main.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-12-21T12:30:05.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "router.jsx",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\route\\router.jsx",
+              "RelativeDocumentMoniker": "cartyres.client\\src\\route\\router.jsx",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\route\\router.jsx",
+              "RelativeToolTip": "cartyres.client\\src\\route\\router.jsx",
+              "ViewState": "AQIAABsAAAAAAAAAAAAUwCsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-12-21T12:34:33.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Services\\AuthService.cs",
+              "RelativeToolTip": "Service\\Services\\AuthService.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAuwDMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T21:42:31.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "CarTyres.Server\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Controllers\\AuthController.cs",
               "RelativeToolTip": "CarTyres.Server\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAACEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T14:23:18.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Program.cs",
-              "RelativeDocumentMoniker": "CarTyres.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Program.cs",
-              "RelativeToolTip": "CarTyres.Server\\Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T14:20:56.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.jsx",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\main.jsx",
-              "RelativeDocumentMoniker": "cartyres.client\\src\\main.jsx",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\main.jsx",
-              "RelativeToolTip": "cartyres.client\\src\\main.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "Login.jsx",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\views\\Login.jsx",
+              "RelativeDocumentMoniker": "cartyres.client\\src\\views\\Login.jsx",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\views\\Login.jsx",
+              "RelativeToolTip": "cartyres.client\\src\\views\\Login.jsx",
+              "ViewState": "AQIAACEAAAAAAAAAAAAuwCwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-12-13T22:14:29.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\App.jsx",
-              "RelativeDocumentMoniker": "cartyres.client\\src\\App.jsx",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\App.jsx",
-              "RelativeToolTip": "cartyres.client\\src\\App.jsx",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwB4AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-12-13T22:14:11.345Z",
+              "WhenOpened": "2024-12-14T20:35:38.321Z",
               "EditorCaption": ""
             }
           ]

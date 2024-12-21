@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:5173",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\..\\cartyres.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
