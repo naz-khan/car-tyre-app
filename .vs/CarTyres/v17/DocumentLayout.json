@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\views\\inventory.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\views\\inventory.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\components\\modals\\addeditinventoryitemmodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\components\\modals\\addeditinventoryitemmodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\service\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|solutionrelative:service\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\service\\interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|solutionrelative:service\\interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\components\\modals\\addeditinventoryitemmodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\components\\modals\\addeditinventoryitemmodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\views\\inventory.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\views\\inventory.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +34,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\.gitignore",
+              "RelativeDocumentMoniker": "cartyres.client\\.gitignore",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\.gitignore",
+              "RelativeToolTip": "cartyres.client\\.gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-29T11:44:48.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IInventoryService.cs",
               "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Interfaces\\IInventoryService.cs",
               "RelativeDocumentMoniker": "Service\\Interfaces\\IInventoryService.cs",
@@ -55,13 +108,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "CarTyres.Server\\Controllers\\InventoryController.cs",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "CarTyres.Server\\Controllers\\InventoryController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADwvykAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T11:48:06.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Services\\InventoryService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\InventoryService.cs",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Services\\InventoryService.cs",
+              "RelativeToolTip": "Service\\Services\\InventoryService.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAADgv0QAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T21:35:27.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AddEditInventoryItemModal.jsx",
               "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\components\\modals\\AddEditInventoryItemModal.jsx",
               "RelativeDocumentMoniker": "cartyres.client\\src\\components\\modals\\AddEditInventoryItemModal.jsx",
               "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\components\\modals\\AddEditInventoryItemModal.jsx",
               "RelativeToolTip": "cartyres.client\\src\\components\\modals\\AddEditInventoryItemModal.jsx",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAC8AAAAaAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-12-28T15:28:59.603Z",
               "EditorCaption": ""
@@ -69,38 +148,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InventoryController.cs",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Controllers\\InventoryController.cs",
-              "RelativeDocumentMoniker": "CarTyres.Server\\Controllers\\InventoryController.cs",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Controllers\\InventoryController.cs",
-              "RelativeToolTip": "CarTyres.Server\\Controllers\\InventoryController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAADwvyYAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T11:48:06.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InventoryService.cs",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Services\\InventoryService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\InventoryService.cs",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Services\\InventoryService.cs",
-              "RelativeToolTip": "Service\\Services\\InventoryService.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAvwEQAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T21:35:27.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Inventory.jsx",
               "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\views\\Inventory.jsx",
               "RelativeDocumentMoniker": "cartyres.client\\src\\views\\Inventory.jsx",
               "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\views\\Inventory.jsx",
               "RelativeToolTip": "cartyres.client\\src\\views\\Inventory.jsx",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAE8AAAAnAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAAAF4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-12-25T20:27:06.367Z",
               "EditorCaption": ""

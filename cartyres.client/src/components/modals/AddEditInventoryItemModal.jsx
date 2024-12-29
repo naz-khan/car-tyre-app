@@ -25,7 +25,7 @@ const tagInputStyle = {
 };
 
 
-const AddEditInventoryItemModal = ({ isModalActive, closeModal, inventoryId }) => {
+const AddEditInventoryItemModal = ({ isModalActive, closeModal, refresh, inventoryId }) => {
     const [loading, setLoading] = useState(false);
     const { token } = theme.useToken();
     const [messageApi, contextHolder] = message.useMessage();
@@ -47,6 +47,7 @@ const AddEditInventoryItemModal = ({ isModalActive, closeModal, inventoryId }) =
 
     const handleOk = async () => {
         let formData = form.getFieldsValue();
+        formData["_id"] = data._id
         try {
             const response = await axios.post('Inventory/inventory', formData)
             messageApi.open({
@@ -54,6 +55,7 @@ const AddEditInventoryItemModal = ({ isModalActive, closeModal, inventoryId }) =
                 content: 'Saved successfully!',
             });
             closeModal(false);
+            refresh();
         } catch (error) {
             console.error("Error fetching data:", error);
         } finally {
@@ -119,6 +121,7 @@ const AddEditInventoryItemModal = ({ isModalActive, closeModal, inventoryId }) =
         try {
             const response = await axios.get(`Inventory/inventory/${inventoryId}`);
             form.setFieldsValue(response.data);
+            setData(response.data);
             setTags(response.data.Tags);
         } catch (error) {
             console.error("Error fetching data:", error);

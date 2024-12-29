@@ -8,11 +8,12 @@ import {
     Radio,
     Select,
     Switch,
-    TreeSelect } from "antd";
-import { PlusOutlined, EditOutlined } from '@ant-design/icons';
-import AddEditInventoryItemModal from "../components/modals/AddEditInventoryItemModal";
-
+    TreeSelect, Space } from "antd";
+import { PlusOutlined, EditOutlined, ScanOutlined } from '@ant-design/icons';
+import QrReader from "react-qr-barcode-scanner";
 import axios from "axios";
+
+import AddEditInventoryItemModal from "../components/modals/AddEditInventoryItemModal";
 
 const Inventory = () => {
     const [data, setData] = useState([]);
@@ -71,6 +72,9 @@ const Inventory = () => {
     useEffect(() => {
         fetchData(pagination);
     }, []);
+    const refresh = () => {
+        fetchData(pagination)
+    };
 
     const handleTableChange = (newPagination) => {
         fetchData(newPagination);
@@ -81,14 +85,34 @@ const Inventory = () => {
         showModal();
     };
 
+
+    const [scannedData, setScannedData] = useState([]);
+    const [isScanning, setIsScanning] = useState(false);
+    const handleCodeScan = (result) => {
+        if (result) {
+            const newBarcode = result.text;
+            // Add to list only if it hasn't been scanned yet
+            if (!scannedData.includes(newBarcode)) {
+                setScannedData([...scannedData, newBarcode]);
+            }
+            setIsScanning(false); // Stop scanning after each successful scan
+        }
+    };
+    const handleScanError = (error) => {
+        console.error("Scanning error:", error);
+    };
+
+
      return (
         <div>
             <header>
                 <h1>Inventory</h1>
             </header>
             <main>
-                <Button onClick={showModal} icon={<PlusOutlined />} size="small" iconPosition="left">Add Inventory</Button>
-
+                <Space>
+                     <Button onClick={showModal} icon={<PlusOutlined />} size="small" iconPosition="left">Add Inventory</Button>
+                     <Button onClick={() => setIsScanning(!isScanning)} icon={<ScanOutlined />} size="small" iconPosition="left">Scan Items</Button>
+                </Space>
                 <Table
                     columns={[
                         { title: "Product Name", dataIndex: "ProductName", key: "ProductName" },
@@ -106,8 +130,20 @@ const Inventory = () => {
                     }}
                     loading={loading}
                     onChange={handleTableChange}
-                />
-                <AddEditInventoryItemModal isModalActive={isModalOpen} closeModal={handleCancel} inventoryId={inventoryId} />
+                 />
+
+                 {isScanning && (
+                     <div style={{ marginTop: "20px", width: "300px", height: "300px" }}>
+                         <QrReader
+                             onResult={handleCodeScan}
+                             onError={handleScanError}
+                             style={{ width: "100%" }}
+                         />
+                     </div>
+                 )}
+
+
+                 <AddEditInventoryItemModal isModalActive={isModalOpen} closeModal={handleCancel} refresh={refresh} inventoryId={inventoryId} />
             </main>
         </div>
     );

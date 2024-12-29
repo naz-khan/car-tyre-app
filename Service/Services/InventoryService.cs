@@ -74,9 +74,9 @@ namespace Service.Services
 
             var result = await collection.Find(filter).FirstOrDefaultAsync();
 
-            if(result == null)
+            if(result != null)
             {
-                await collection.UpdateOneAsync(filter, data);
+                await collection.UpdateOneAsync(filter, new BsonDocument("$set", data));
             }
             else {                 
                 await collection.InsertOneAsync(data);
