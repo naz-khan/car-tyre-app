@@ -24,3 +24,47 @@ body {
     margin: 0;
     font-family: 'Gilroy', sans-serif;
 }
+
+.custom-card {
+    box-sizing: border-box;
+    line-height: 1.5714285714285714;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.custom-card-body {
+    padding: 2px 15px 10px 15px;
+}
+    .custom-card-body .title {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .custom-card-body .subtitle {
+        font-size: 14px;
+    }
+    .custom-card-body .value{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .custom-card-footer {
+        padding: 10px 15px;
+        background-color: #e9e5e5;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        cursor: pointer;
+    }
+
+button {
+    margin-bottom: 0 !important;
+}
+.ant-btn {
+    width: auto !important;
+}
+
+.ant-btn-sm {
+    font-size: 12px !important;
+    height: 24px !important;
+    padding: 0px 7px !important;
+    border-radius: 4px !important;
+}

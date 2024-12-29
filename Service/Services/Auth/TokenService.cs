@@ -1,10 +1,14 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Service.Interfaces;
+using Service.Models.AppSettings;
+using Services.Cache;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace Service.Services.Auth
@@ -12,96 +16,109 @@ namespace Service.Services.Auth
     public class TokenService : ITokenService
     {
         private readonly IConfiguration _configuration;
-
-        public TokenService(IConfiguration configuration)
+        private readonly ICacheProvider cache;
+        private readonly JwtTokenConfig _jwtTokenConfig;
+        private readonly byte[] _secret;
+        public TokenService(JwtTokenConfig jwtTokenConfig, ICacheProvider cache)
         {
-            _configuration = configuration;
+            _jwtTokenConfig = jwtTokenConfig;
+            this.cache = cache;
+            _secret = Encoding.ASCII.GetBytes(jwtTokenConfig.Secret);
         }
 
-        public JwtAuthResult GenerateAccessToken(string Email, IEnumerable<Claim> claims)
+        public JwtAuthResult GenerateTokens(string username, Claim[] claims, DateTime now)
         {
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["jwtTokenConfig:secret"]));
-            var expiry = DateTime.Now.AddMinutes(int.Parse(_configuration["jwtTokenConfig:accessTokenExpiration"]));
+            var expiry = now.AddMinutes(_jwtTokenConfig.AccessTokenExpiration);
 
-            var jwToken = new JwtSecurityToken(
-                issuer: _configuration["jwtTokenConfig:issuer"],
-                audience: _configuration["jwtTokenConfig:audience"],
-                claims: claims,
-                notBefore: DateTime.Now,
+            var shouldAddAudienceClaim = string.IsNullOrWhiteSpace(claims?.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Aud)?.Value);
+            var jwtToken = new JwtSecurityToken(
+                _jwtTokenConfig.Issuer,
+                shouldAddAudienceClaim ? _jwtTokenConfig.Audience : string.Empty,
+                claims,
                 expires: expiry,
-                signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256)
-            );
+                signingCredentials: new SigningCredentials(new SymmetricSecurityKey(_secret), SecurityAlgorithms.HmacSha256Signature));
+            var accessToken = new JwtSecurityTokenHandler().WriteToken(jwtToken);
 
-            var accessToken = new JwtSecurityTokenHandler().WriteToken(jwToken);
-
+            var refreshExpiry = now.AddMinutes(_jwtTokenConfig.RefreshTokenExpiration);
             var refreshToken = new RefreshToken
             {
-                UserName = Email,
-                TokenString = GenerateRefreshToken(),
+                Email = username,
+                TokenString = GenerateRefreshTokenString(),
+                ExpireAt = refreshExpiry
+            };
+
+            var accessTokenModel = new AccessToken
+            {
+                AccessTokenString = accessToken,
                 ExpireAt = expiry
             };
 
+            cache.SetCache(refreshToken.TokenString, refreshToken, null);
+
             return new JwtAuthResult
             {
-                AccessToken = accessToken,
+                AccessToken = accessTokenModel,
                 RefreshToken = refreshToken
             };
+        }
+
+        public void RemoveRefreshTokenByToken(string token)
+        {
+            cache.ClearCache(token);
+        }
+        public async Task<RefreshToken> GetRefreshTokenValid(string refreshToken, DateTime now)
+        {
+            try
+            {
+                var token = await cache.GetFromCache<RefreshToken>(refreshToken);
+                if (token == null)
+                {
+                    throw new SecurityTokenException("Invalid token");
+                }
+                if (token.ExpireAt < now)
+                {
+                    throw new SecurityTokenException("Invalid token");
+                }
+
+                return token;
+            }
+            catch (Exception ex)
+            {
+                throw new SecurityTokenException("Invalid token", ex);
+            }
+
 
         }
 
-        public string GenerateRefreshToken()
+        public (ClaimsPrincipal, JwtSecurityToken) DecodeJwtToken(string token)
+        {
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                throw new SecurityTokenException("Invalid token");
+            }
+            var principal = new JwtSecurityTokenHandler()
+                .ValidateToken(token,
+                    new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidIssuer = _jwtTokenConfig.Issuer,
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(_secret),
+                        ValidAudience = _jwtTokenConfig.Audience,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ClockSkew = TimeSpan.FromMinutes(1)
+                    },
+                    out var validatedToken);
+            return (principal, validatedToken as JwtSecurityToken);
+        }
+
+        private static string GenerateRefreshTokenString()
         {
             var randomNumber = new byte[32];
-            using (var rng = RandomNumberGenerator.Create())
-            {
-                rng.GetBytes(randomNumber);
-                return Convert.ToBase64String(randomNumber);
-            }
-        }
-
-        public ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
-        {
-            var tokenValidationParameters = new TokenValidationParameters
-            {
-                ValidateAudience = true,
-                ValidAudience = _configuration["jwtTokenConfig:audience"],
-                ValidateIssuer = true,
-                ValidIssuer = _configuration["jwtTokenConfig.issuer"],
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["jwtTokenConfig:secret"])),
-                ValidateLifetime = true,
-            };
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-            SecurityToken securityToken;
-            var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out securityToken);
-            var jwtSecurityToken = securityToken as JwtSecurityToken;
-            if (jwtSecurityToken == null || !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
-                throw new SecurityTokenException("Invalid token");
-
-            return principal;
-        }
-
-        public class JwtAuthResult
-        {
-            [JsonPropertyName("accessToken")]
-            public string? AccessToken { get; set; }
-
-            [JsonPropertyName("refreshToken")]
-            public RefreshToken? RefreshToken { get; set; }
-        }
-
-        public class RefreshToken
-        {
-            [JsonPropertyName("username")]
-            public string? UserName { get; set; }    // can be used for usage tracking
-                                                    // can optionally include other metadata, such as user agent, ip address, device name, and so on
-
-            [JsonPropertyName("tokenString")]
-            public string? TokenString { get; set; }
-
-            [JsonPropertyName("expireAt")]
-            public DateTime ExpireAt { get; set; }
+            using var randomNumberGenerator = RandomNumberGenerator.Create();
+            randomNumberGenerator.GetBytes(randomNumber);
+            return Convert.ToBase64String(randomNumber);
         }
     }
 }

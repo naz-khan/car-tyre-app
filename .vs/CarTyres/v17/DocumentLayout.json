@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\route\\router.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\route\\router.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\service\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|solutionrelative:service\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\route\\protectedroute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\route\\protectedroute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}|CarTyres.Server\\CarTyres.Server.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.server\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}|CarTyres.Server\\CarTyres.Server.csproj|solutionrelative:cartyres.server\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\components\\navlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\components\\navlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\service\\interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|solutionrelative:service\\interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\components\\modals\\addeditinventoryitemmodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\components\\modals\\addeditinventoryitemmodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\views\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\views\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\service\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B423AA-78E9-4553-862D-7BD7002D48A0}|Service\\Service.csproj|solutionrelative:service\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}|CarTyres.Server\\CarTyres.Server.csproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}|CarTyres.Server\\CarTyres.Server.csproj|solutionrelative:cartyres.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|c:\\users\\nazaqut.khan\\documents\\custom projects\\cartyres\\cartyres.client\\src\\views\\inventory.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8CBBEF1F-6A33-4461-BB65-0C2616076A50}|cartyres.client\\cartyres.client.esproj|solutionrelative:cartyres.client\\src\\views\\inventory.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,93 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProtectedRoute.jsx",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\route\\ProtectedRoute.jsx",
-              "RelativeDocumentMoniker": "cartyres.client\\src\\route\\ProtectedRoute.jsx",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\route\\ProtectedRoute.jsx",
-              "RelativeToolTip": "cartyres.client\\src\\route\\ProtectedRoute.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-12-21T15:31:53.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NavLayout.jsx",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\components\\NavLayout.jsx",
-              "RelativeDocumentMoniker": "cartyres.client\\src\\components\\NavLayout.jsx",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\components\\NavLayout.jsx",
-              "RelativeToolTip": "cartyres.client\\src\\components\\NavLayout.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-12-21T14:48:10.802Z",
+              "Title": "IInventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Interfaces\\IInventoryService.cs",
+              "RelativeDocumentMoniker": "Service\\Interfaces\\IInventoryService.cs",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Interfaces\\IInventoryService.cs",
+              "RelativeToolTip": "Service\\Interfaces\\IInventoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T19:34:18.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "main.jsx",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\main.jsx",
-              "RelativeDocumentMoniker": "cartyres.client\\src\\main.jsx",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\main.jsx",
-              "RelativeToolTip": "cartyres.client\\src\\main.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "Title": "AddEditInventoryItemModal.jsx",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\components\\modals\\AddEditInventoryItemModal.jsx",
+              "RelativeDocumentMoniker": "cartyres.client\\src\\components\\modals\\AddEditInventoryItemModal.jsx",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\components\\modals\\AddEditInventoryItemModal.jsx",
+              "RelativeToolTip": "cartyres.client\\src\\components\\modals\\AddEditInventoryItemModal.jsx",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC8AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-12-21T12:30:05.315Z",
+              "WhenOpened": "2024-12-28T15:28:59.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "CarTyres.Server\\Controllers\\InventoryController.cs",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "CarTyres.Server\\Controllers\\InventoryController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADwvyYAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T11:48:06.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "router.jsx",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\route\\router.jsx",
-              "RelativeDocumentMoniker": "cartyres.client\\src\\route\\router.jsx",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\route\\router.jsx",
-              "RelativeToolTip": "cartyres.client\\src\\route\\router.jsx",
-              "ViewState": "AQIAABsAAAAAAAAAAAAUwCsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-12-21T12:34:33.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Services\\AuthService.cs",
-              "RelativeToolTip": "Service\\Services\\AuthService.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAuwDMAAAAjAAAA",
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Services\\InventoryService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\InventoryService.cs",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\Service\\Services\\InventoryService.cs",
+              "RelativeToolTip": "Service\\Services\\InventoryService.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAvwEQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T21:42:31.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "CarTyres.Server\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\CarTyres.Server\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "CarTyres.Server\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAACEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T14:23:18.41Z",
+              "WhenOpened": "2024-12-25T21:35:27.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Login.jsx",
-              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\views\\Login.jsx",
-              "RelativeDocumentMoniker": "cartyres.client\\src\\views\\Login.jsx",
-              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\views\\Login.jsx",
-              "RelativeToolTip": "cartyres.client\\src\\views\\Login.jsx",
-              "ViewState": "AQIAACEAAAAAAAAAAAAuwCwAAAAtAAAA",
+              "Title": "Inventory.jsx",
+              "DocumentMoniker": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\views\\Inventory.jsx",
+              "RelativeDocumentMoniker": "cartyres.client\\src\\views\\Inventory.jsx",
+              "ToolTip": "C:\\Users\\nazaqut.khan\\Documents\\Custom Projects\\CarTyres\\cartyres.client\\src\\views\\Inventory.jsx",
+              "RelativeToolTip": "cartyres.client\\src\\views\\Inventory.jsx",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAE8AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-12-14T20:35:38.321Z",
+              "WhenOpened": "2024-12-25T20:27:06.367Z",
               "EditorCaption": ""
             }
           ]

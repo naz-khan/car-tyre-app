@@ -11,7 +11,7 @@
     <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
     <PackageJsonDependenciesAuth0Auth0React Condition="$(PackageJsonDependenciesAuth0Auth0React) == ''">^2.2.4</PackageJsonDependenciesAuth0Auth0React>
     <PackageJsonDependenciesReduxjsToolkit Condition="$(PackageJsonDependenciesReduxjsToolkit) == ''">^2.5.0</PackageJsonDependenciesReduxjsToolkit>
-    <PackageJsonDependenciesAntd Condition="$(PackageJsonDependenciesAntd) == ''">^5.22.5</PackageJsonDependenciesAntd>
+    <PackageJsonDependenciesAntd Condition="$(PackageJsonDependenciesAntd) == ''">^5.22.7</PackageJsonDependenciesAntd>
     <PackageJsonDependenciesAxios Condition="$(PackageJsonDependenciesAxios) == ''">^1.7.9</PackageJsonDependenciesAxios>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^18.3.1</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^18.3.1</PackageJsonDependenciesReactDom>

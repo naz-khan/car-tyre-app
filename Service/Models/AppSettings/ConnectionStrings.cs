@@ -9,5 +9,6 @@ namespace Service.Models.AppSettings
     public class ConnectionStrings
     {
         public string CarDB { get; set; }
+        public string Redis { get; set; }
     }
 }

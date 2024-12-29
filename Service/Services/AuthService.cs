@@ -2,6 +2,7 @@
 using MongoDB.Driver;
 using Service.Interfaces;
 using Service.Models;
+using Service.Services.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,9 +28,7 @@ namespace Service.Services
         }
         public async Task<User> AuthenticateUserAsync(string email, string password)
         {
-            var user = await _database.GetCollection<User>("Users")
-                .Find(x => x.Email == email)
-                .FirstOrDefaultAsync();
+            var user = await GetUserByEmail(email);
 
             if(user == null)
             {
@@ -45,7 +44,7 @@ namespace Service.Services
                     new Claim(ClaimTypes.Role, user.Role)
                 };
 
-                var jwtToken = _tokenService.GenerateAccessToken(user.Email, usersClaims);
+                var jwtToken = _tokenService.GenerateTokens(user.Email, usersClaims, DateTime.Now);
 
                 return new User
                 {
@@ -54,21 +53,55 @@ namespace Service.Services
                     Lastname = user.Lastname,
                     Email = user.Email,
                     Role = user.Role,
-                    AccessToken = jwtToken.AccessToken,
+                    AccessToken = jwtToken.AccessToken.AccessTokenString,
                     RefreshToken = jwtToken.RefreshToken.TokenString,
-                    TokenExpiration = jwtToken.RefreshToken.ExpireAt.ToString("yyyy-MM-dd HH:mm:ss")
+                    TokenExpiration = jwtToken.AccessToken.ExpireAt.ToString("yyyy-MM-dd HH:mm:ss")
                 };
             }
 
             return null;
         }
         
+        public async Task<User> RefreshToken(RefreshTokenRequest request)
+        {
+            var refreshToken = await _tokenService.GetRefreshTokenValid(request.RefreshToken, DateTime.Now);
+
+            var user = await GetUserByEmail(refreshToken.Email);
+
+            var usersClaims = new[]
+            {
+                new Claim(ClaimTypes.Name, user.Email),
+                new Claim(ClaimTypes.NameIdentifier, user._Id.ToString()),
+                new Claim(ClaimTypes.Role, user.Role)
+            };
+
+            var newJwtToken = _tokenService.GenerateTokens(refreshToken.Email, usersClaims, DateTime.Now);
+
+            return new User
+            {
+                _Id = user._Id,
+                Firstname = user.Firstname,
+                Lastname = user.Lastname,
+                Email = user.Email,
+                Role = user.Role,
+                AccessToken = newJwtToken.AccessToken.AccessTokenString,
+                RefreshToken = newJwtToken.RefreshToken.TokenString,
+                TokenExpiration = newJwtToken.AccessToken.ExpireAt.ToString("yyyy-MM-dd HH:mm:ss")
+            };
+        }
         public async Task CreateUser(User data)
         {          
             data.Password = _passwordHasher.GenerateIdentityV3Hash(data.Password);
 
             await _database.GetCollection<User>("Users")
                 .InsertOneAsync(data);
+        }
+
+        private async Task<User> GetUserByEmail(string email)
+        {
+            return await _database.GetCollection<User>("Users")
+                .Find(x => x.Email == email)
+                .FirstOrDefaultAsync();
         }
     }
 }
