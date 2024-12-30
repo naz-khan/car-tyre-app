@@ -10,12 +10,13 @@ import {
     Switch,
     TreeSelect,
     Tag,
-    message
+    message,
+    Table, Space
 } from "antd";
-import { PlusOutlined } from '@ant-design/icons';
+import { PlusOutlined, ScanOutlined } from '@ant-design/icons';
+import QrReader from "react-qr-barcode-scanner";
 
 import axios from "axios";
-
 
 const tagInputStyle = {
     width: 64,
@@ -130,23 +131,40 @@ const AddEditInventoryItemModal = ({ isModalActive, closeModal, refresh, invento
         }
     };
 
+    const deleteInventoryItem = async (sku) => {
+        form.setFieldsValue({ "QuantityInStock": data.InventoryItems.length - 1 })
+        let newInventoryItems = data.InventoryItems.filter((item) => item.SKU !== sku);
+        setData({ ...data, InventoryItems: newInventoryItems });
+
+        await axios.put(`Inventory/inventory/${inventoryId}`, newInventoryItems)
+        messageApi.open({
+            type: 'success',
+            content: 'Item deleted successfully!'
+        });
+    };
+
+    const [scannedData, setScannedData] = useState([]);
+    const [isScanning, setIsScanning] = useState(false);
+    const handleCodeScan = (result) => {
+        if (result) {
+            const newBarcode = result.text;
+            // Add to list only if it hasn't been scanned yet
+            if (!scannedData.includes(newBarcode)) {
+                setScannedData([...scannedData, newBarcode]);
+            }
+            setIsScanning(false); // Stop scanning after each successful scan
+        }
+    };
+
+    const handleScanError = (error) => {
+        console.error("Scanning error:", error);
+    };
+
   return (
-      <Modal open={isModalActive} title="Add/Edit Inventory Item" closeIcon={false}
+      <Modal open={isModalActive} title="Add/Edit Inventory Item"
           footer={[
-              <Button
-                  key="cancel"
-                  type="default"
-                  size="small"
-                  onClick={handleCancel}>
-                  Close
-              </Button>,
-              <Button
-                  key="add"
-                  type="primary"
-                  onClick={handleOk}
-                  size="small">
-                  Save Inventory
-              </Button>
+              <Button key="cancel" onClick={handleCancel}>Close</Button>,
+              <Button key="add" type="primary" onClick={handleOk}>Save Inventory</Button>
           ]}>
           <Form form={form} labelCol={{span: 5}} layout="horizontal">
               <Form.Item label="Product Name:" name="ProductName">
@@ -231,6 +249,34 @@ const AddEditInventoryItemModal = ({ isModalActive, closeModal, refresh, invento
                   </Flex>
               </Form.Item>
           </Form>
+
+          <Space>
+              <Button type="primary" icon={<PlusOutlined />} size="small" iconPosition="left">Add Inventory Item</Button>
+              <Button onClick={() => setIsScanning(!isScanning)} icon={<ScanOutlined />} size="small" iconPosition="left">Scan Items</Button>
+          </Space>
+
+          {isScanning && (
+              <div style={{ marginTop: "20px", width: "300px", height: "300px" }}>
+                  <QrReader
+                      onResult={handleCodeScan}
+                      onError={handleScanError}
+                      style={{ width: "100%" }}
+                  />
+              </div>
+          )}
+
+          <Table
+              columns={[
+                  { title: "Product Barcode", dataIndex: "ProductBarcode", key: "ProductBarcode" },
+                  { title: "SKU", dataIndex: "SKU", key: "SKU" },
+                  { title: "Date Added", dataIndex: "DateAdded", key: "DateAdded" },
+                  { title: 'Action', dataIndex: '', key: 'x', render: (text, record) => <a onClick={() => deleteInventoryItem(record.SKU)}>Delete</a> },
+              ]}
+              dataSource={data.InventoryItems}
+              rowKey={(record) => record.SKU}
+              loading={loading}
+              size="small"
+          />
       </Modal>
   );
 }

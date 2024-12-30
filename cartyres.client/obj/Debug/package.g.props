@@ -9,7 +9,6 @@
     <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">vite build</PackageJsonScriptsBuild>
     <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>
     <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
-    <PackageJsonDependenciesAuth0Auth0React Condition="$(PackageJsonDependenciesAuth0Auth0React) == ''">^2.2.4</PackageJsonDependenciesAuth0Auth0React>
     <PackageJsonDependenciesReduxjsToolkit Condition="$(PackageJsonDependenciesReduxjsToolkit) == ''">^2.5.0</PackageJsonDependenciesReduxjsToolkit>
     <PackageJsonDependenciesAntd Condition="$(PackageJsonDependenciesAntd) == ''">^5.22.7</PackageJsonDependenciesAntd>
     <PackageJsonDependenciesAxios Condition="$(PackageJsonDependenciesAxios) == ''">^1.7.9</PackageJsonDependenciesAxios>

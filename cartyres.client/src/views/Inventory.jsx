@@ -98,6 +98,7 @@ const Inventory = () => {
             setIsScanning(false); // Stop scanning after each successful scan
         }
     };
+
     const handleScanError = (error) => {
         console.error("Scanning error:", error);
     };
@@ -110,15 +111,16 @@ const Inventory = () => {
             </header>
             <main>
                 <Space>
-                     <Button onClick={showModal} icon={<PlusOutlined />} size="small" iconPosition="left">Add Inventory</Button>
-                     <Button onClick={() => setIsScanning(!isScanning)} icon={<ScanOutlined />} size="small" iconPosition="left">Scan Items</Button>
+                     <Button type="primary" onClick={showModal} icon={<PlusOutlined />} iconPosition="left">Add Inventory</Button>
+                     <Button onClick={() => setIsScanning(!isScanning)} icon={<ScanOutlined />} iconPosition="left">Scan Items</Button>
                 </Space>
                 <Table
                     columns={[
                         { title: "Product Name", dataIndex: "ProductName", key: "ProductName" },
                         { title: "Description", dataIndex: "Description", key: "Description" },
+                        { title: "Category", dataIndex: "Category", key: "Category" },
                         { title: "Price", dataIndex: "Price", key: "Price" },
-                        { title: "QuantityInStock", dataIndex: "QuantityInStock", key: "QuantityInStock" },
+                        { title: "Quantity", dataIndex: "QuantityInStock", key: "QuantityInStock" },
                         { title: 'Action', dataIndex: '', key: 'x', render: (text, record) => <a onClick={() => editInventoryItem(record._id)}>Edit</a>},
                     ]}
                     dataSource={data}

@@ -38,18 +38,18 @@
     margin-bottom: 6rem;
 }
 
-.form-group {
+.login-form-group {
     margin-bottom: 1rem;
 }
 
-    .form-group label {
+    .login-form-group label {
         font-family: 'Gilroy-Thin', sans-serif;
         display: block;
         margin-bottom: 0.5rem;
         font-weight: bold;
     }
 
-    .form-group input {
+    .login-form-group input {
         width: 100%;
         padding: 0.5rem;
         border: none; /* Remove all borders */
@@ -61,7 +61,7 @@
         transition: border-color 0.3s;
     }
 
-button {
+.login-btn {
     width: 100% !important;
     margin-top: 4rem !important;
     margin-bottom: 2rem !important;
@@ -75,9 +75,9 @@ button {
     height: 41px !important;
 }
 
-    button:hover {
-        background-color: #0056b3 !important;
-    }
+.login-btn:hover {
+    background-color: #0056b3 !important;
+}
 
 .error-message {
     color: red;

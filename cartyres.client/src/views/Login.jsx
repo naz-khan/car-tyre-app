@@ -56,7 +56,7 @@ const Login = () => {
                 <h4>Fast and Easy Product Management</h4>
                 <h2>Welcome Back!</h2>
                 <form onSubmit={handleLogin}>
-                    <div className="form-group">
+                    <div className="login-form-group">
                         <label htmlFor="username">Email</label>
                         <input
                             type="text"
@@ -66,7 +66,7 @@ const Login = () => {
                             required
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="login-form-group">
                         <label htmlFor="password">Password</label>
                         <input
                             type="password"
@@ -77,7 +77,7 @@ const Login = () => {
                         />
                     </div>
                     {errorMessage && <p className="error-message">{errorMessage}</p>}
-                    <Button type="primary" loading={loading} onClick={handleLogin} htmlType="submit">
+                    <Button type="primary" loading={loading} onClick={handleLogin} htmlType="submit" className="login-btn" style={{minWidth: "100%"}}>
                         Sign In
                     </Button>
                 </form>

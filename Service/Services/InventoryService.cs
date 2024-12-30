@@ -82,5 +82,15 @@ namespace Service.Services
                 await collection.InsertOneAsync(data);
             }
         }
+
+        public async Task DeleteInventory(string id)
+        {
+
+        }
+
+        public async Task DeleteInventoryItems(string id, List<string> sku)
+        {
+
+        }
     }
 }
