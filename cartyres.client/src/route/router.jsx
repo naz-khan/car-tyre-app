@@ -9,6 +9,8 @@ const state = store.getState(); // Get the initial state
 import Login from '../views/Login'; // Import Login component
 import Home from '../views/Home'; // Import Home component
 import Inventory from '../views/Inventory';
+import Orders from '../views/Orders';
+import Customers from '../views/Customers';
 import NavLayout from '../components/NavLayout'; // Import Layout for protected routes
 
 // Function to get the current user from Redux state
@@ -48,6 +50,14 @@ const router = createBrowserRouter([
                     {
                         path: '/inventory', // This means it's the default child of /home
                         element: <Inventory /> // Inventory component will be rendered inside NavLayout
+                    },
+                    {
+                        path: '/orders', // This means it's the default child of /home
+                        element: <Orders /> // Orders component will be rendered inside NavLayout
+                    },
+                    {
+                        path: '/customers',
+                        element: <Customers />
                     }
                 ]
             },

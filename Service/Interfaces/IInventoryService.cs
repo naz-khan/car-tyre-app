@@ -16,5 +16,10 @@ namespace Service.Interfaces
         Task<Pagination<BsonDocument>> Inventory(InventorySearchCriteria searchCriteria);
         Task<string> InventoryById(string id);
         Task SaveInventory(JsonObject inventory);
+        Task DeleteInventory(string id);
+        Task DeleteInventoryItems(string id, List<string> sku);
+
+        Task<string> Tyres();
+        Task<Pagination<BsonDocument>> SearchTyres(TyreSearchCriteria data);
     }
 }

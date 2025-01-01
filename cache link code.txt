@@ -1,0 +1,1 @@
+ssh -i jump-server.pem -f -N -L 6379:redis.oikprl.ng.0001.eun1.cache.amazonaws.com:6379 ec2-user@16.170.173.145

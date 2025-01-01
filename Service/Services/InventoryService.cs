@@ -47,7 +47,8 @@ namespace Service.Services
 
             // Create paginated results
             var model = await Pagination<BsonDocument>
-                .CreateFrom(collection, combinedFilter, searchCriteria.PerPage, searchCriteria.PageNumber);
+                .CreateFrom(collection, combinedFilter, searchCriteria.PageSize, searchCriteria.PageNumber);
+
 
             return model;
         }
@@ -91,6 +92,44 @@ namespace Service.Services
         public async Task DeleteInventoryItems(string id, List<string> sku)
         {
 
+        }
+
+        public async Task<string> Tyres()
+        {
+            var collection = await _database.GetCollection<BsonDocument>("Tyres")
+                .Find(_ => true)
+                .ToListAsync();
+            
+            return collection.ToJson();
+        }
+
+        public async Task<Pagination<BsonDocument>> SearchTyres(TyreSearchCriteria searchCriteria)
+        {
+            var filterBuilder = Builders<BsonDocument>.Filter;
+
+            // Create filters dynamically using LINQ
+            var filters = new List<FilterDefinition<BsonDocument>>
+            {
+                // Convert SKU to string since it is stored as a string in the database
+                !string.IsNullOrEmpty(searchCriteria.TyreWidth) ? filterBuilder.Eq("InventoryItems.Dimensions.width", searchCriteria.TyreWidth) : null,
+                !string.IsNullOrEmpty(searchCriteria.TyreHeight) ? filterBuilder.Eq("InventoryItems.Dimensions.height", searchCriteria.TyreHeight) : null,
+                !string.IsNullOrEmpty(searchCriteria.TyreRimSize) ? filterBuilder.Eq("InventoryItems.Dimensions.RimSize", searchCriteria.TyreRimSize) : null
+            }.Where(filter => filter != null)
+            .ToList();
+
+            // Combine filters with AND, or use an empty filter if none are provided
+            var combinedFilter = filters.Any()
+                ? filterBuilder.And(filters)
+                : FilterDefinition<BsonDocument>.Empty;
+
+            var collection = _database.GetCollection<BsonDocument>("Inventory");
+
+            // Create paginated results
+            var model = await Pagination<BsonDocument>
+                .CreateFrom(collection, combinedFilter, searchCriteria.PageSize, searchCriteria.PageNumber);
+
+
+            return model;
         }
     }
 }

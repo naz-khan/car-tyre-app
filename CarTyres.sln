@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarTyres.Server", "CarTyres.Server\CarTyres.Server.csproj", "{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarTyres.Server", "CarTyres.Server\CarTyres.Server.csproj", "{D0BA1A1E-325D-4F2A-9C6D-C3D84B4D414F}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "cartyres.client", "cartyres.client\cartyres.client.esproj", "{8CBBEF1F-6A33-4461-BB65-0C2616076A50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{50B423AA-78E9-4553-862D-7BD7002D48A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{50B423AA-78E9-4553-862D-7BD7002D48A0}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "cartyressite", "CarTyresSite\cartyressite.esproj", "{7EBBA1F0-163D-486B-813A-6A6018967046}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,12 @@ Global
 		{50B423AA-78E9-4553-862D-7BD7002D48A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50B423AA-78E9-4553-862D-7BD7002D48A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50B423AA-78E9-4553-862D-7BD7002D48A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBBA1F0-163D-486B-813A-6A6018967046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBBA1F0-163D-486B-813A-6A6018967046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBBA1F0-163D-486B-813A-6A6018967046}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7EBBA1F0-163D-486B-813A-6A6018967046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBBA1F0-163D-486B-813A-6A6018967046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBBA1F0-163D-486B-813A-6A6018967046}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

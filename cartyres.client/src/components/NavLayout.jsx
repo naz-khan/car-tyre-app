@@ -20,10 +20,10 @@ function getItem(label, key, icon, path, children) {
 }
 
 const items = [
-    getItem('Dashboard', '1', <HomeOutlined />, 'home'),
-    getItem('Customers', '2', <UserOutlined />, 'customers'),
-    getItem('Orders', '7', <FileOutlined />, 'orders'),
-    getItem('Inventory', '8', <FileOutlined />, 'inventory'),
+    getItem('Dashboard', 'home-0', <HomeOutlined />, 'home'),
+    getItem('Customers', 'customers-1', <UserOutlined />, 'customers'),
+    getItem('Orders', 'orders-2', <FileOutlined />, 'orders'),
+    getItem('Inventory', 'inventory-3', <FileOutlined />, 'inventory'),
 ];
 
 const NavLayout = () => {

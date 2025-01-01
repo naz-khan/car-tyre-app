@@ -41,5 +41,19 @@ namespace CarTyres.Server.Controllers
             await _service.SaveInventory(data);
             return Ok();
         }
+
+        [HttpGet("tyres")]
+        public async Task<IActionResult> Tyres()
+        {
+            var r = await _service.Tyres();
+            return Ok(r);
+        }
+
+        [HttpGet("search-tyres")]
+        public async Task<IActionResult> SearchTyres([FromQuery] TyreSearchCriteria data)
+        {
+            var r = await _service.SearchTyres(data);
+            return Ok(r);
+        }
     }
 }

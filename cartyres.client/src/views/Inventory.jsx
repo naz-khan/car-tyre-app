@@ -46,7 +46,7 @@ const Inventory = () => {
                 params: {
                     pageNumber: pagination.current,
                     pageSize: pagination.pageSize,
-                    searchCriteria: {
+                    filters: {
                         SKU: "", // Add search criteria if needed
                         ProductName: "",
                         ProductBarcode: "",
@@ -124,7 +124,7 @@ const Inventory = () => {
                         { title: 'Action', dataIndex: '', key: 'x', render: (text, record) => <a onClick={() => editInventoryItem(record._id)}>Edit</a>},
                     ]}
                     dataSource={data}
-                    rowKey={(record) => record._id}
+                    rowKey={(record) => record._id.$oid}
                     pagination={{
                         current: pagination.current,
                         pageSize: pagination.pageSize,

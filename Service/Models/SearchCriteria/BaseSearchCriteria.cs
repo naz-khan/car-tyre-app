@@ -14,7 +14,7 @@ namespace Service.Models.SearchCriteria
         public int PageNumber { get; set; } = 1;
 
         [Range(1, 500)]
-        [Display(Name = "Per Page")]
-        public int PerPage { get; set; } = 20;
+        [Display(Name = "Page Size")]
+        public int PageSize { get; set; } = 10;
     }
 }
